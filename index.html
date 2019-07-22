@@ -1,64 +1,313 @@
----
-layout: default
-title: Home
-cover: false
-about: 'about.html'
----
+<!DOCTYPE html>
+<html lang="en">
 
-<header class="main-header {% if page.cover %}" style="background-image: url({{ page.cover }}) {%else%}no-cover{% endif %}">
-    <nav class="main-nav overlay clearfix">
-            {% if page.logo %}
-                <a class="blog-logo" href="{{ site.baseurl }}">
-                    <img src="{{ page.logo }}" alt="Blog Logo" />
-                </a>
-            {% endif %}
-        <a class="subscribe-button icon-feed" href="{{ site.baseurl }}feed.xml">Subscribe</a>
-    </nav>
-    <div class="vertical">
-        <div class="main-header-content inner">
-            <h1 class="page-title">{{ site.name }}</h1>
-            <h2 class="page-description">
-                {% if site.description %} {{ site.description }}. {% endif %}
-                {% if page.about %} <a href='{{ site.baseurl }}{{ page.about }}'> About me </a> {% endif %}
-            </h2>
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Mattheus Cassundé</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom fonts for this template -->
+  <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet">
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="css/resume.min.css" rel="stylesheet">
+
+</head>
+
+<body id="page-top">
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
+    <a class="navbar-brand js-scroll-trigger" href="#page-top">
+      <span class="d-block d-lg-none">Clarence Taylor</span>
+      <span class="d-none d-lg-block">
+        <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/profile.jpg" alt="">
+      </span>
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#about">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#experience">Experience</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#education">Education</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#skills">Skills</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#interests">Interests</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#awards">Open Source</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="container-fluid p-0">
+
+    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="about">
+      <div class="w-100">
+        <h1 class="mb-0">Mattheus
+          <span class="text-primary">Cassundé</span>
+        </h1>
+        <div class="subheading mb-5">Caucaia · Ceará · Brazil ·
+          <a href="mailto:name@email.com">mattheus.089@gmail.com</a>
         </div>
-    </div>
-    <a class="scroll-down icon-arrow-left" href="#content" data-offset="-45"><span class="hidden">Scroll Down</span></a>
-</header>
+        <p class="lead mb-5">I’m a Software Developer who works on Java EE platform and related technologies. I really like development codes and good practices.</p>
+        <div class="social-icons">
+          <a href="https://www.linkedin.com/in/cassunde/" target="_blank">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+          <a href="https://github.com/cassunde" target="_blank" >
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="https://twitter.com/MattheusCassund" target="_blank" >
+            <i class="fab fa-twitter"></i>
+          </a>
+        </div>
+      </div>
+    </section>
 
+    <hr class="m-0">
 
-<main id="content" class="content" role="main">
+    <section class="resume-section p-3 p-lg-5 d-flex justify-content-center" id="experience">
+      <div class="w-100">
+        <h2 class="mb-5">Experience</h2>
 
+        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+          <div class="resume-content">
+            <h3 class="mb-0">Tech Lead / Java Developer</h3>
+            <div class="subheading mb-3">Planner Sistemas</div>
+            <p>I am responsible for managing development team composed of 5 programmers, definition of development standards, technical specification and others, I too develop Systems Modules to composition the platform,  using follow technologies:
+              <ul>
+                <li>
+                  Java 8 - OpenJDK
+                </li>
+                <li>
+                  JavaEE 8 (CDI, JPA/Hibernate)
+                </li>
+                <li>
+                  Maven
+                </li>
+                <li>
+                  Main databases
+                </li>
+              </ul>
 
-    <div class="extra-pagination inner">
-        {% include pagination.html %}
-    </div>
+            </p>
+          </div>
+          <div class="resume-date text-md-right">
+            <span class="text-primary">Set 2018 - Present</span>
+          </div>
+        </div>
 
-    {% for post in paginator.posts %}
+        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+          <div class="resume-content">
+            <h3 class="mb-0">Java Developer</h3>
+            <div class="subheading mb-3">Planner Sistemas</div>
+            <p>Developer platform to budget management. Used technologies
+              <ul>
+                <li>
+                  JavaEE 8 (CDI, JSF, JPA/Hibernate) - Oracle
+                </li>
+                <li>
+                  Primefaces
+                </li>
+                <li>
+                  OracleDB, Postgres, SQL Server
+                </li>      
+                <li>
+                  GIT
+                </li>
+                <li>
+                  Jenkins
+                </li>
+                <li>
+                  Tomcat
+                </li>
+                <li>
+                  Flyway
+                </li>
+              </ul> 
+            </p>
+          </div>
+          <div class="resume-date text-md-right">
+            <span class="text-primary">Jan 2017 - Set 2018</span>
+          </div>
+        </div>
 
-    <article class="post">
-        <header class="post-header">
-            <h2 class="post-title"><a href="{{ post.url }}">{{ post.title }}</a></h2>
-        </header>
-        <section class="post-excerpt">
-            {{ post.excerpt }} <a class="read-more" href="{{ post.url }}">&raquo;</a>
-        </section>
-        <footer class="post-meta">
-            {% if site.author %}
-                <img class="author-thumb" src="/assets/images/profile.png" alt="Author's profile picture" nopin="nopin" />
-                {{ site.author }}
-            {% endif %}
-            {% if post.categories.size > 0 %} 
-                {{ post.categories | array_to_sentence_string | prepend: 'on ' }} 
-            {% endif %}
-            <time class="post-date" datetime="{{ post.date | date:"%Y-%m-%d" }}">
-                {{ post.date | date_to_string }}
-            </time> 
-        </footer>
-    </article>
+        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+          <div class="resume-content">
+            <h3 class="mb-0">Java Developer</h3>
+            <div class="subheading mb-3">SOTECH - Soluções e tecnologia</div>
+            <p>Develop and maintain a hospital management platform. Used technologies
+              <ul>
+                <li>
+                  JavaEE 8 (CDI, JSF, JPA/Hibernate) - Oracle
+                </li>
+                <li>
+                  Primefaces
+                </li>
+                <li>
+                  Postgres
+                </li>      
+                <li>
+                  GIT
+                </li>
+                <li>
+                  Tomcat
+                </li>
+                <li>
+                  Flyway
+                </li>
+              </ul> 
+            </p>
+          </div>
+          <div class="resume-date text-md-right">
+            <span class="text-primary">Jul 2013 - Set 2016</span>
+          </div>
+        </div>
+      </div>
 
-    {% endfor %}
+    </section>
 
-    {% include pagination.html %}
+    <hr class="m-0">
 
-</main>
+    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="education">
+      <div class="w-100">
+        <h2 class="mb-5">Education</h2>
+
+        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+          <div class="resume-content">
+            <h3 class="mb-0">University Estácio</h3>
+            <div class="subheading mb-3">Analisis and development Systems</div>
+            <div>Systems Analyst - Web Development Track</div>
+          </div>
+          <div class="resume-date text-md-right">
+            <span class="text-primary">Dec 2020</span>
+          </div>
+        </div>
+
+        <div class="resume-item d-flex flex-column flex-md-row justify-content-between">
+          <div class="resume-content">
+            <h3 class="mb-0">Institute Evolução</h3>
+            <div class="subheading mb-3">Java Formation</div>
+            <div> Developer using JavaEE and your specifications </div>
+          </div>
+          <div class="resume-date text-md-right">
+            <span class="text-primary">Jan 2013 - Dec 2013</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <hr class="m-0">
+
+    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="skills">
+      <div class="w-100">
+        <h2 class="mb-5">Skills</h2>
+
+        <div class="subheading mb-3">Programming Languages &amp; Tools</div>
+        Front-End
+        <ul class="list-inline dev-icons">
+          <li class="list-inline-item">
+            <i class="fab fa-html5"></i>
+          </li>
+          <li class="list-inline-item">
+            <i class="fab fa-js"></i>
+          </li>          
+          <li class="list-inline-item">
+            <i class="fab fa-react"></i>
+          </li>          
+          <li class="list-inline-item">
+            <i class="fab fa-npm"></i>
+          </li>
+        </ul>
+        <hr>
+        Back-End
+        <ul class="list-inline dev-icons">
+            <li class="list-inline-item">
+              <i class="fab fa-java"></i>
+            </li>            
+          </ul>
+
+        <div class="subheading mb-3">Workflow</div>
+        <ul class="fa-ul mb-0">
+          <li>
+            <i class="fa-li fa fa-check"></i>
+            Mobile-First, Responsive Design</li>
+          <li>
+            <i class="fa-li fa fa-check"></i>
+            Cross Browser Testing &amp; Debugging</li>
+          <li>
+            <i class="fa-li fa fa-check"></i>
+            Cross Functional Teams</li>
+          <li>
+            <i class="fa-li fa fa-check"></i>
+            Agile Development &amp; Scrum</li>
+        </ul>
+      </div>
+    </section>
+
+    <hr class="m-0">
+
+    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="interests">
+      <div class="w-100">
+        <h2 class="mb-5">Interests</h2>
+        <p>In addition to being a web developer, I take advantage of a part of my time in open source projects. I like open source projects with social focuses.</p>
+        <p class="mb-0">I have a goal in my professional life, to be a software architect.</p>
+      </div>
+    </section>
+
+    <hr class="m-0">
+
+    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="awards">
+      <div class="w-100">
+        <h2 class="mb-5">Open Source Projects</h2>
+        <div class="subheading mb-3">Contribute to projects</div>
+        
+        <ul class="fa-ul mb-0">
+          <li>
+            <i class="fab fa-github"></i>
+              <a href="https://github.com/taok-monitor" target="_blank">TaOk- Monitor</a> 
+          </li>
+          <li>
+            <i class="fab fa-github"></i>
+            <a href="https://github.com/codless" target="_blank">CodLess</a> 
+          </li>          
+        </ul>
+      </div>
+    </section>
+
+  </div>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Plugin JavaScript -->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="js/resume.min.js"></script>
+
+</body>
+
+</html>

@@ -1,52 +1,68 @@
-# Kasper
+# [Start Bootstrap - Resume](https://startbootstrap.com/template-overviews/resume/)
 
-> This is a port of Ghost's default theme [Casper](https://github.com/tryghost/casper) for Jekyll. 
-Feel free to fork, change, modify and re-use it.
+[Resume](https://startbootstrap.com/template-overviews/resume/) is a resume and CV theme for [Bootstrap](http://getbootstrap.com/) created by [Start Bootstrap](http://startbootstrap.com/). This theme features a fixed sidebar with content sections to build a simple, yet elegant resume.
 
-## Installation
+## Preview
 
-    git clone https://github.com/rosario/kasper.git
-    cd kasper
-    gem install jekyll
-    gem install pygments.rb
+[![Resume Preview](https://startbootstrap.com/assets/img/screenshots/themes/resume.png)](https://blackrockdigital.github.io/startbootstrap-resume/)
 
-## How to use it
+**[View Live Preview](https://blackrockdigital.github.io/startbootstrap-resume/)**
 
-Build page and start local web server
+## Status
 
-    jekyll serve
+[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/BlackrockDigital/startbootstrap-resume/master/LICENSE)
+[![npm version](https://img.shields.io/npm/v/startbootstrap-resume.svg)](https://www.npmjs.com/package/startbootstrap-resume)
+[![Build Status](https://travis-ci.org/BlackrockDigital/startbootstrap-resume.svg?branch=master)](https://travis-ci.org/BlackrockDigital/startbootstrap-resume)
+[![dependencies Status](https://david-dm.org/BlackrockDigital/startbootstrap-resume/status.svg)](https://david-dm.org/BlackrockDigital/startbootstrap-resume)
+[![devDependencies Status](https://david-dm.org/BlackrockDigital/startbootstrap-resume/dev-status.svg)](https://david-dm.org/BlackrockDigital/startbootstrap-resume?type=dev)
 
-Build page into `_site` folder
+## Download and Installation
 
-    jekyll build
+To begin using this template, choose one of the following options to get started:
+* [Download the latest release on Start Bootstrap](https://startbootstrap.com/template-overviews/resume/)
+* Install via npm: `npm i startbootstrap-resume`
+* Clone the repo: `git clone https://github.com/BlackrockDigital/startbootstrap-resume.git`
+* [Fork, Clone, or Download on GitHub](https://github.com/BlackrockDigital/startbootstrap-resume)
 
-## Kasper theme includes
+## Usage
 
-* Pagination
-* Rss
-* Google Analytics Tracking code
-* Code Syntax Highlight
-* Author's profile with picture
-* Disqus comments
+### Basic Usage
 
-## Screenshots
+After downloading, simply edit the HTML and CSS files included with the template in your favorite text editor to make changes. These are the only files you need to worry about, you can ignore everything else! To preview the changes you make to the code, you can open the `index.html` file in your web browser.
 
-![index page](https://raw.github.com/rosario/kasper/master/assets/images/kasper-theme-index.png)
-![post page](https://raw.github.com/rosario/kasper/master/assets/images/kasper-theme-post.png)
+### Advanced Usage
 
+After installation, run `npm install` and then run `npm start` which will open up a preview of the template in your default browser, watch for changes to core template files, and live reload the browser when changes are saved. You can view the `gulpfile.js` to see which tasks are included with the dev environment.
 
-## Thanks
+#### Gulp Tasks
 
-Most of the work has been already done by the Ghost team, I've just ported Casper to Jekyll. 
-I've also added few things specific to Jekyll and some minor style changes.
+- `gulp` the default task that builds everything
+- `gulp watch` browserSync opens the project in your default browser and live reloads when changes are made
+- `gulp css` compiles SCSS files into CSS and minifies the compiled CSS
+- `gulp js` minifies the themes JS file
+- `gulp vendor` copies dependencies from node_modules to the vendor directory
 
-## Copyright & License
+You must have npm installed globally in order to use this build environment.
 
-Copyright (C) 2013 Ghost Foundation - Released under the MIT License.
+## Bugs and Issues
 
-Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+Have a bug or an issue with this template? [Open a new issue](https://github.com/BlackrockDigital/startbootstrap-resume/issues) here on GitHub or leave a comment on the [template overview page at Start Bootstrap](http://startbootstrap.com/template-overviews/resume/).
 
-The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+## About
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
-NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+Start Bootstrap is an open source library of free Bootstrap templates and themes. All of the free templates and themes on Start Bootstrap are released under the MIT license, which means you can use them for any purpose, even for commercial projects.
+
+* https://startbootstrap.com
+* https://twitter.com/SBootstrap
+
+Start Bootstrap was created by and is maintained by **[David Miller](http://davidmiller.io/)**, Owner of [Blackrock Digital](http://blackrockdigital.io/).
+
+* http://davidmiller.io
+* https://twitter.com/davidmillerskt
+* https://github.com/davidtmiller
+
+Start Bootstrap is based on the [Bootstrap](http://getbootstrap.com/) framework created by [Mark Otto](https://twitter.com/mdo) and [Jacob Thorton](https://twitter.com/fat).
+
+## Copyright and License
+
+Copyright 2013-2019 Blackrock Digital LLC. Code released under the [MIT](https://github.com/BlackrockDigital/startbootstrap-resume/blob/gh-pages/LICENSE) license.
