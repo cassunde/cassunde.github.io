@@ -34,7 +34,7 @@
   Link: </component---node-modules-gatsby-plugin-offline-app-shell-js-935e0e69dcc64ca6d5cc.js>; rel=preload; as=script
   Link: </page-data/app-data.json>; rel=preload; as=fetch; crossorigin
   Link: </page-data/offline-plugin-app-shell-fallback/page-data.json>; rel=preload; as=fetch; crossorigin
-/hello-world/
+/quarkus-spring/index
   Link: </webpack-runtime-cc0b38cef444e236cac9.js>; rel=preload; as=script
   Link: </commons-e2ae4a9dffb62aae459f.js>; rel=preload; as=script
   Link: </app-5d394a89c359e7e8e22b.js>; rel=preload; as=script
@@ -42,8 +42,8 @@
   Link: </commons-e2ae4a9dffb62aae459f.js>; rel=preload; as=script
   Link: </component---src-templates-index-js-bd7c1315f2cb8a9d84dc.js>; rel=preload; as=script
   Link: </page-data/app-data.json>; rel=preload; as=fetch; crossorigin
-  Link: </page-data/hello-world/page-data.json>; rel=preload; as=fetch; crossorigin
-/quarkus-spring/circuit-breaker
+  Link: </page-data/quarkus-spring/index/page-data.json>; rel=preload; as=fetch; crossorigin
+/design-pattern/circuit-breaker
   Link: </webpack-runtime-cc0b38cef444e236cac9.js>; rel=preload; as=script
   Link: </commons-e2ae4a9dffb62aae459f.js>; rel=preload; as=script
   Link: </app-5d394a89c359e7e8e22b.js>; rel=preload; as=script
@@ -51,7 +51,7 @@
   Link: </commons-e2ae4a9dffb62aae459f.js>; rel=preload; as=script
   Link: </component---src-templates-index-js-bd7c1315f2cb8a9d84dc.js>; rel=preload; as=script
   Link: </page-data/app-data.json>; rel=preload; as=fetch; crossorigin
-  Link: </page-data/quarkus-spring/circuit-breaker/page-data.json>; rel=preload; as=fetch; crossorigin
+  Link: </page-data/design-pattern/circuit-breaker/page-data.json>; rel=preload; as=fetch; crossorigin
 /
   Link: </webpack-runtime-cc0b38cef444e236cac9.js>; rel=preload; as=script
   Link: </commons-e2ae4a9dffb62aae459f.js>; rel=preload; as=script
