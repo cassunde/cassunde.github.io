@@ -52,6 +52,15 @@
   Link: </component---src-templates-index-js-bd7c1315f2cb8a9d84dc.js>; rel=preload; as=script
   Link: </page-data/app-data.json>; rel=preload; as=fetch; crossorigin
   Link: </page-data/design-pattern/circuit-breaker/page-data.json>; rel=preload; as=fetch; crossorigin
+/open-source/ta-ok/api-bizu
+  Link: </webpack-runtime-cc0b38cef444e236cac9.js>; rel=preload; as=script
+  Link: </commons-e2ae4a9dffb62aae459f.js>; rel=preload; as=script
+  Link: </app-5d394a89c359e7e8e22b.js>; rel=preload; as=script
+  Link: </styles-7e230589d322286b85ef.js>; rel=preload; as=script
+  Link: </commons-e2ae4a9dffb62aae459f.js>; rel=preload; as=script
+  Link: </component---src-templates-index-js-bd7c1315f2cb8a9d84dc.js>; rel=preload; as=script
+  Link: </page-data/app-data.json>; rel=preload; as=fetch; crossorigin
+  Link: </page-data/open-source/ta-ok/api-bizu/page-data.json>; rel=preload; as=fetch; crossorigin
 /
   Link: </webpack-runtime-cc0b38cef444e236cac9.js>; rel=preload; as=script
   Link: </commons-e2ae4a9dffb62aae459f.js>; rel=preload; as=script
