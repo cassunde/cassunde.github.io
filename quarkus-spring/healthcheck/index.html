@@ -103,7 +103,7 @@
 <li>Gradle</li>
 </ul>
 <div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">dependencies {
-    implementation &amp;#39;org.springframework.boot:spring-boot-starter-actuator&amp;#39;
+    implementation org.springframework.boot:spring-boot-starter-actuator
 }</code></pre></div>
 <ul>
 <li>properties</li>
@@ -126,9 +126,9 @@
 <span class="token punctuation">}</span></code></pre></div>
 <p>Simplesmente vamos retornar um objeto do tipo <code class="language-text">Health</code> e ele mesmo sabe criar sua própria instância com método statico <code class="language-text">up();</code> ou <code class="language-text">down();</code></p>
 <h2>Health Check no Quarkus</h2>
-<p>O Quarkus segue a especificação <a href="https://github.com/eclipse/microprofile-health/">eclipse/microprofile-health</a> e indica a implementação <a href="https://github.com/smallrye/smallrye-health/">smallrye/smallrye-health</a> </p>
+<p>O Quarkus segue a especificação <a href="https://github.com/eclipse/microprofile-health/">eclipse/microprofile-health</a> e usa a implementação <a href="https://github.com/smallrye/smallrye-health/">smallrye/smallrye-health</a> </p>
 <p><strong>Health</strong></p>
-<p>Segunda a especificação basicamente as informações de Health Check seram exibidas nos seguindes end-points:</p>
+<p>Segundo a especificação basicamente as informações de Health Check serão exibidas nos seguindes end-points:</p>
 <table>
 <thead>
 <tr>
