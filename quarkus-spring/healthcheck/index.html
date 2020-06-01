@@ -103,7 +103,7 @@
 <li>Gradle</li>
 </ul>
 <div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">dependencies {
-    implementation org.springframework.boot:spring-boot-starter-actuator
+    implementation &quot;org.springframework.boot:spring-boot-starter-actuator&quot;
 }</code></pre></div>
 <ul>
 <li>properties</li>
@@ -111,8 +111,28 @@
 <div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">management.endpoint.health.show-details=always</code></pre></div>
 <p><strong>Indicadores pré-configurados</strong></p>
 <p>Existem vários indicadores pré-configurados no spring aqui está <a href="https://docs.spring.io/spring-boot/docs/current/reference/html/production-ready-features.html#production-ready-health-indicators">Lista Completa</a>.</p>
+<p><strong>Testando</strong></p>
+<ul>
+<li>inicia aplicação com:</li>
+</ul>
+<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">$ ./mvnw bootRun</code></pre></div>
+<ul>
+<li>Testa o seguinte end-point</li>
+</ul>
+<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">curl --request GET --url http://localhost:8080/actuator/health</code></pre></div>
+<ul>
+<li>sua resposta será algo do tipo:</li>
+</ul>
+<div class="gatsby-highlight" data-language="json"><pre class="language-json"><code class="language-json"><span class="token punctuation">{</span>
+  <span class="token property">"status"</span><span class="token operator">:</span> <span class="token string">"UP"</span>
+<span class="token punctuation">}</span></code></pre></div>
 <p><strong>Customizando</strong></p>
-<p>Para customizar também e bem simples basta implementar a Interface <code class="language-text">HealthIndicator</code> como no exemplo abaixo:</p>
+<p>Para customizar também e bem simples basta:</p>
+<ul>
+<li>Implementar a Interface <code class="language-text">HealthIndicator</code> e retornar um objeto do tipo <code class="language-text">Health</code> .</li>
+<li>Anota Classe com <code class="language-text">@Component</code></li>
+</ul>
+<p>Exemplo:</p>
 <div class="gatsby-highlight" data-language="java"><pre class="language-java"><code class="language-java"><span class="token annotation punctuation">@Component</span>
 <span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">HealthCustomizedOfMyApplication</span> <span class="token keyword">implements</span> <span class="token class-name">HealthIndicator</span> <span class="token punctuation">{</span>
 
@@ -124,7 +144,20 @@
         <span class="token keyword">return</span> <span class="token class-name">Health</span><span class="token punctuation">.</span><span class="token function">up</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">build</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
     <span class="token punctuation">}</span>
 <span class="token punctuation">}</span></code></pre></div>
-<p>Simplesmente vamos retornar um objeto do tipo <code class="language-text">Health</code> e ele mesmo sabe criar sua própria instância com método statico <code class="language-text">up();</code> ou <code class="language-text">down();</code></p>
+<p>Com essa configuração retornaria uma resposta assim:</p>
+<ul>
+<li>Request:</li>
+</ul>
+<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">curl --request GET --url http://localhost:8080/actuator/health</code></pre></div>
+<ul>
+<li>Response:</li>
+</ul>
+<div class="gatsby-highlight" data-language="json"><pre class="language-json"><code class="language-json"><span class="token punctuation">{</span>
+  <span class="token property">"status"</span><span class="token operator">:</span> <span class="token string">"UP"</span><span class="token punctuation">,</span>
+  <span class="token property">"healthCustomizedOfMyApplication"</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+      <span class="token property">"status"</span><span class="token operator">:</span> <span class="token string">"UP"</span>
+   <span class="token punctuation">}</span>  
+<span class="token punctuation">}</span></code></pre></div>
 <h2>Health Check no Quarkus</h2>
 <p>O Quarkus segue a especificação <a href="https://github.com/eclipse/microprofile-health/">eclipse/microprofile-health</a> e usa a implementação <a href="https://github.com/smallrye/smallrye-health/">smallrye/smallrye-health</a> </p>
 <p><strong>Health</strong></p>
@@ -159,6 +192,7 @@
   <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>groupId</span><span class="token punctuation">></span></span>io.quarkus<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>groupId</span><span class="token punctuation">></span></span>
   <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>artifactId</span><span class="token punctuation">></span></span>quarkus-smallrye-health<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>artifactId</span><span class="token punctuation">></span></span>
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>dependency</span><span class="token punctuation">></span></span></code></pre></div>
+<p><strong>Testando</strong></p>
 <ul>
 <li>inicia aplicação com:</li>
 </ul>
@@ -173,6 +207,7 @@
 <div class="gatsby-highlight" data-language="json"><pre class="language-json"><code class="language-json"><span class="token punctuation">{</span>
   <span class="token property">"status"</span><span class="token operator">:</span> <span class="token string">"UP"</span>
 <span class="token punctuation">}</span></code></pre></div>
+<p><strong>Customizando</strong></p>
 <p>Para personalizar um <strong>Health Check</strong> e bem simples basta:</p>
 <ul>
 <li>Implementar a interface <code class="language-text">HealthCheck</code> e retornar um objeto do tipo <code class="language-text">HealthCheckResponse</code> .</li>
