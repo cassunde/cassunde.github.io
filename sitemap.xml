@@ -4,6 +4,7 @@
 <url> <loc>https://cassunde.github.io/design-pattern/circuit-breaker</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://cassunde.github.io/open-source/ta-ok/api-bizu</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://cassunde.github.io/quarkus-spring/healthcheck</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://cassunde.github.io/java/cdi/dynamic-inject</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://cassunde.github.io/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://cassunde.github.io/profile/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 </urlset>
