@@ -47,8 +47,8 @@
 /static/2295400a01c38474d8819fa96d4afa0d/d8815/banner.png 750w,
 /static/2295400a01c38474d8819fa96d4afa0d/31987/banner.png 1000w,
 /static/2295400a01c38474d8819fa96d4afa0d/37092/banner.png 1180w" src="/static/2295400a01c38474d8819fa96d4afa0d/46604/banner.png" alt="" style="position:absolute;top:0;left:0;opacity:1;width:100%;height:100%;object-fit:cover;object-position:center"/></picture></noscript></div></div><div class="content"><h3>INJEÇÃO DINÂMICA</h3>
-<p>Hoje vou falar um pouco sobre injeção de dependência sob demanda.</p>
 <p>E comum encontrarmos <strong>beans</strong> ou <strong>controllers</strong> ou qualquer outra <strong>classe</strong>  com várias injeções de dependências e na maioria das vezes uma boa  parte dessas injeções são usadas em momentos pontuais da rotina.</p>
+<!--more-->
 <p>Quando a classe que contém esses injects e  instanciada, a CDI vai se virar para criar e disponibilizar todas as  suas dependências, já imaginou se em cada uma das dependências existir  uma lógica no seu construtor? talvez possa resultar em perca de  performance.</p>
 <p>Vamos ver na prática:</p>
 <p>na forma tradicional seria mais ou menos assim:</p>
