@@ -47,14 +47,14 @@
 /static/a97da98ead36e225094419cdc5bb5cc5/d8815/banner.png 750w,
 /static/a97da98ead36e225094419cdc5bb5cc5/31987/banner.png 1000w,
 /static/a97da98ead36e225094419cdc5bb5cc5/37092/banner.png 1180w" src="/static/a97da98ead36e225094419cdc5bb5cc5/46604/banner.png" alt="" style="position:absolute;top:0;left:0;opacity:1;width:100%;height:100%;object-fit:cover;object-position:center"/></picture></noscript></div></div><div class="content"><h2>TechNews 2021.04</h2>
-<p>Hoje vamos falar sobre alguns assuntos bem legais para você desenvolvedor, principalmente backend que gosta de java</p>
+<p>Hoje vamos falar sobre alguns assuntos bem legais para você desenvolvedor, principalmente backend que gosta de java.</p>
 <h2>Destaques</h2>
 <ul>
 <li>JDK com um servidor web acoplado</li>
 <li>Kafka sem Zookeeper</li>
 <li>AWS agora com Openshift</li>
 <li>OpenTelemetry no Quarkus</li>
-<li>Novidades no Micronau</li>
+<li>Novidades no Micronaut</li>
 <li>Novidades String Boot 2.5.0 RC1</li>
 <li>Microsoft com seu próprio OpenJDK</li>
 </ul>
@@ -74,14 +74,14 @@ $ java -m jdk.httpserver -p 8000</code></pre></div>
 <h2>Kafka sem Zookeeper</h2>
 <p>Confluent, empresa que mantém o projeto Kafka, anunciou acesso ao KIP-500, um <code class="language-text">metadata store</code> construido junto com Apache Kafka que irá remover a dependência dom Apache Zookeeper.</p>
 <p>Desenvolvedores poderam rodar Kafka sem Zookeeper no Kafka Raft Metadata(KRaft) mode. projeto já em desenvolvimento a quase um ano.</p>
-<p>Funcionalidades de seguranças e particionamento ainda não são suportados nessa versão, ma desenvolvedores já podem testar o novo <strong>Quantum Controller</strong>.</p>
+<p>Funcionalidades de seguranças e particionamento ainda não são suportadas nessa versão, ma desenvolvedores já podem testar o novo <strong>Quantum Controller</strong>.</p>
 <p><img src="https://cdn.confluent.io/wp-content/uploads/new-quorum-controller-600x319.png"></p>
-<p>Segundo <a href="https://www.confluent.io/blog/kafka-without-zookeeper-a-sneak-peek/">POST</a> que anuncia esse novo serviço, diz que todas as responsabilidades do Kafka Controller e Zookeeper são mesclados no Quantum Controller.</p>
+<p>Segundo <a href="https://www.confluent.io/blog/kafka-without-zookeeper-a-sneak-peek/">POST</a> que anuncia esse novo serviço, diz que todas as responsabilidades do Kafka Controller e Zookeeper estarão mesclados no Quantum Controller.</p>
 <h2>AWS agora com Openshift</h2>
 <p>Uma parceria entre AWS e RedHat anunciada recentemente nesse <a href="https://aws.amazon.com/pt/rosa/">post</a> confirma a integração do OpenShift Service no AWS.</p>
 <p>Quem já utiliza o OpenShift agora poderá acelará ainda mais seu processo de desenvolvimento aproveitando seus conhecimentos das APIs do OpenShift com as ferramentas de deploy da AWS.</p>
 <h2>OpenTelemetry no Quarkus</h2>
-<p><a href="https://opentelemetry.io/">OpenTelemetry</a> e uma coleção de APIs para ser usado na exportação de dados sobre suas aplicações como:</p>
+<p><a href="https://opentelemetry.io/">OpenTelemetry</a> e uma coleção de APIs para serem usadas na exportação de dados sobre suas aplicações como:</p>
 <ul>
 <li>Metricas</li>
 <li>Logs</li>
@@ -104,8 +104,8 @@ $ java -m jdk.httpserver -p 8000</code></pre></div>
 <ul>
 <li>
 <p><strong>Adoção do jarkata.inject</strong> </p>
-<p>Nova versão do Micronout anunciada nesse <a href="https://micronaut.io/2021/03/09/micronaut-2-4-released/">POST</a> lança o suporte ao <code class="language-text">jarkata.inject</code> uma alternativa ao já conhecido <code class="language-text">javax.inject</code> criado na especificação do CDI.</p>
-<p>Na próxima versão do Micronaut não será mais incluido por default as anotações do <code class="language-text">javax.inject</code>, mas as anotações continuaram sendo suportadas normalmente.</p>
+<p>Nova versão do Micronaut anunciada nesse <a href="https://micronaut.io/2021/03/09/micronaut-2-4-released/">POST</a> lança o suporte ao <code class="language-text">jarkata.inject</code> uma alternativa ao já conhecido <code class="language-text">javax.inject</code> usado bastante na especificação do CDI.</p>
+<p>Na próxima versão do Micronaut não será mais incluído por default as anotações do <code class="language-text">javax.inject</code>, mas as anotações continuaram sendo suportadas normalmente.</p>
 </li>
 </ul>
 <h2>Novidades String Boot 2.5.0 RC</h2>
@@ -114,8 +114,8 @@ $ java -m jdk.httpserver -p 8000</code></pre></div>
 <li>
 <p><strong>Métricas no String Data</strong></p>
 <p>Uma novidade bem legal e a inclusão de métricas no String Data, agora o actuator irá gerar métrica com o nome <code class="language-text">spring.data.repository.invocations</code>, esse nome também poderá ser customizado.</p>
-<p>O <code class="language-text">@Timed</code> agora poderá ser anotado em repositórios ou métodos aqui lista de <a href="https://docs.spring.io/spring-boot/docs/2.5.x-SNAPSHOT/reference/html/production-ready-features.html#production-ready-metrics-timed-annotation">locais permitidos</a></p>
-<p>Essa métricas teremos as seguintes informações:</p>
+<p>O <code class="language-text">@Timed</code> agora poderá ser anotado em repositórios ou métodos, aqui lista dos <a href="https://docs.spring.io/spring-boot/docs/2.5.x-SNAPSHOT/reference/html/production-ready-features.html#production-ready-metrics-timed-annotation">locais permitidos</a></p>
+<p>Essa novidade terá alguma novas tags:</p>
 <table>
 <thead>
 <tr>
