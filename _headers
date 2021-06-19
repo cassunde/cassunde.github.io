@@ -97,6 +97,15 @@
   Link: </component---src-templates-index-js-bd7c1315f2cb8a9d84dc.js>; rel=preload; as=script
   Link: </page-data/app-data.json>; rel=preload; as=fetch; crossorigin
   Link: </page-data/quarkus-spring/healthcheck/page-data.json>; rel=preload; as=fetch; crossorigin
+/java/pattern/observer/java-puro
+  Link: </webpack-runtime-e8bdeb94fdaa903690ad.js>; rel=preload; as=script
+  Link: </commons-bdeea1fe6cd4478cb385.js>; rel=preload; as=script
+  Link: </app-613e7b02bf39f35c845b.js>; rel=preload; as=script
+  Link: </styles-7e230589d322286b85ef.js>; rel=preload; as=script
+  Link: </commons-bdeea1fe6cd4478cb385.js>; rel=preload; as=script
+  Link: </component---src-templates-index-js-bd7c1315f2cb8a9d84dc.js>; rel=preload; as=script
+  Link: </page-data/app-data.json>; rel=preload; as=fetch; crossorigin
+  Link: </page-data/java/pattern/observer/java-puro/page-data.json>; rel=preload; as=fetch; crossorigin
 /
   Link: </webpack-runtime-e8bdeb94fdaa903690ad.js>; rel=preload; as=script
   Link: </commons-bdeea1fe6cd4478cb385.js>; rel=preload; as=script
