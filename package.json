@@ -1,49 +1,24 @@
 {
   "name": "profile",
-  "private": true,
-  "description": "Profile Cassundev",
-  "version": "0.1.0",
-  "author": "Mattheus Cassundé",
-  "bugs": {
-    "url": "https://github.com/cassunde"
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "strat": "node server.js"
   },
-  "dependencies": {
-    "@fontsource/merriweather": "^5.0.3",
-    "@fontsource-variable/montserrat": "^5.0.4",
-    "gatsby": "^5.11.0",
-    "gatsby-plugin-feed": "^5.11.0",
-    "gatsby-plugin-image": "^3.11.0",
-    "gatsby-plugin-manifest": "^5.11.0",
-    "gatsby-plugin-sharp": "^5.11.0",
-    "gatsby-remark-images": "^7.11.0",
-    "gatsby-remark-prismjs": "^7.11.0",
-    "gatsby-remark-responsive-iframe": "^6.11.1",
-    "gatsby-source-filesystem": "^5.11.0",
-    "gatsby-transformer-remark": "^6.11.0",
-    "gatsby-transformer-sharp": "^5.11.0",
-    "prismjs": "^1.29.0",
-    "react": "^18.1.0",
-    "react-dom": "^18.1.0"
-  },
-  "devDependencies": {
-    "prettier": "^2.8.8"
-  },
-  "homepage": "https://github.com/cassunde/cassunde.github.io",
-  "keywords": [
-    "gatsby"
-  ],
-  "license": "0BSD",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/cassunde/cassunde.github.io.git"
+    "url": "git+https://github.com/technext/profile.git"
   },
-  "scripts": {
-    "build": "gatsby build",
-    "develop": "gatsby develop",
-    "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
-    "start": "gatsby develop",
-    "serve": "gatsby serve",
-    "clean": "gatsby clean",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
-  }
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/technext/profile/issues"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-http-proxy": "^1.6.2",
+    "http-proxy-middleware": "^2.0.6"
+  },
+  "homepage": "https://github.com/technext/profile#readme"
 }
