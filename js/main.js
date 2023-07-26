@@ -134,8 +134,10 @@
 		return response.json();
 		}).then(function(data) {
 			var cards = "";
-			data.forEach((element, index) => {
-				if(index <= 4)
+			data
+			.sort(compareArticles)
+			.forEach((element, index) => {
+				if(index <= 2)
 					cards = cards + `
 						<div class="col-md-4">
 							<div class="fh5co-blog">
@@ -162,6 +164,10 @@
 		}).catch(function() {
 		console.log("Houve algum problema!");
 		});
+	}
+
+	function compareArticles(a, b) {
+		return b.public_reactions_count - a.public_reactions_count;
 	}
 
 	// Loading page
