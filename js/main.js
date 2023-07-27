@@ -145,7 +145,7 @@
 								<div class="blog-text">
 									<span class="posted_on">${element.readable_publish_date}</span>
 									<h3><a href="${element.url}">${element.title}</a></h3>
-									<p>${element.description}}</p>
+									<p>${element.description}</p>
 									<ul class="stuff">
 										<li><i class="icon-heart2"></i>${element.public_reactions_count}</li>
 										<li><a href="${element.url}">Read More<i class="icon-arrow-right22"></i></a></li>
@@ -157,9 +157,42 @@
 
 						
 			});
-			
-			console.log(cards);
 			document.getElementById("row-posts").innerHTML = cards
+			
+		}).catch(function() {
+			console.log("Houve algum problema!");
+		});
+	}
+
+	var loadRepos = function(){
+		const minhaUrl = "https://api.github.com/users/cassunde/repos?page=1&per_page=50"
+		fetch(minhaUrl).then(function(response) {
+		return response.json();
+		}).then(function(data) {
+			var cards = "";
+			data
+			.sort(compareRepos)
+			.forEach((element, index) => {
+				if(index <= 2)
+					cards = cards + `
+						<div class="col-md-4">
+							<div class="fh5co-blog">								
+								<div class="blog-text">
+									<h3><a href="${element.html_url}">${element.name}</a></h3>
+									<p>${element.description}</p>
+									<ul class="stuff">
+										<li><i class="icon-heart2"></i>${element.stargazers_count}</li>
+										<li><a href="${element.html_url}">Read More<i class="icon-arrow-right22"></i></a></li>
+									</ul>
+								</div> 
+							</div>
+						</div>
+						`
+
+						
+			});
+			console.log(cards);
+			document.getElementById("row-repos").innerHTML = cards
 			
 		}).catch(function() {
 		console.log("Houve algum problema!");
@@ -168,6 +201,9 @@
 
 	function compareArticles(a, b) {
 		return b.public_reactions_count - a.public_reactions_count;
+	}
+	function compareRepos(a, b) {
+		return b.stargazers_count - a.stargazers_count;
 	}
 
 	// Loading page
@@ -185,6 +221,7 @@
 		// pieChart();
 		skillsWayPoint();
 		loadArticles();
+		loadRepos();
 	});
 
 
